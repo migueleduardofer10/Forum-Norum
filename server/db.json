@@ -1,0 +1,68 @@
+{
+  "subreddit": [
+    {
+      "id": 1,
+      "name": "Economía",
+      "description": "Se toca asuntos de oferta y demanda",
+      "numberOfPosts": 0
+    },
+    {
+      "id": 2,
+      "name": "Programación",
+      "description": "Se toca asuntos de programación",
+      "numberOfPosts": 0
+    },
+    {
+      "name": "Historia",
+      "description": "Se tocan temas de la historia del Perú ",
+      "id": 3
+    },
+    {
+      "name": "Matematica",
+      "description": "Se tocan mateticas algebraicas",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "postName": "This is my first post",
+      "url": "http://www.google.com",
+      "description": "This is my first post",
+      "userName": "user",
+      "subredditName": "Economía",
+      "voteCount": -1,
+      "commentCount": 0,
+      "duration": "1 hour ago"
+    },
+    {
+      "id": 2,
+      "postName": "This is my second post",
+      "url": "http://www.google.com",
+      "description": "This is my second post",
+      "userName": "user",
+      "subredditName": "Economía",
+      "voteCount": -1,
+      "commentCount": 0,
+      "duration": "1 hour ago"
+    },
+    {
+      "id": 3,
+      "postName": "This is my third post",
+      "url": "http://www.google.com",
+      "description": "This is my third post",
+      "userName": "user",
+      "subredditName": "Economía",
+      "voteCount": -1,
+      "commentCount": 0,
+      "duration": "1 hour ago"
+    },
+    {
+      "postName": "Oferta y Demanda",
+      "url": "https://www.youtube.com/watch?v=LfZ7xdMPytI&t=2198s",
+      "description": "<p>dsdsds</p>",
+      "subredditName": "Economía",
+      "id": 4
+    }
+  ]
+}
