@@ -31,7 +31,7 @@
       "description": "This is my first post",
       "userName": "user",
       "subredditName": "Economía",
-      "voteCount": -1,
+      "voteCount": 0,
       "commentCount": 0,
       "duration": "1 hour ago"
     },
@@ -42,7 +42,7 @@
       "description": "This is my second post",
       "userName": "user",
       "subredditName": "Economía",
-      "voteCount": -1,
+      "voteCount": 0,
       "commentCount": 0,
       "duration": "1 hour ago"
     },
@@ -53,7 +53,7 @@
       "description": "This is my third post",
       "userName": "user",
       "subredditName": "Economía",
-      "voteCount": -1,
+      "voteCount": 0,
       "commentCount": 0,
       "duration": "1 hour ago"
     },
@@ -63,6 +63,418 @@
       "description": "<p>dsdsds</p>",
       "subredditName": "Economía",
       "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "postId": 1,
+      "text": "First",
+      "userName": "user",
+      "duration": "1 hour ago"
+    },
+    {
+      "postId": 2,
+      "text": "Second",
+      "userName": "user",
+      "duration": "1 hour ago"
+    },
+    {
+      "postId": 3,
+      "text": "Third",
+      "userName": "user",
+      "duration": "1 hour ago"
+    }
+  ],
+  "votes": [
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 1
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 2
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 3
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 4
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 5
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 6
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 7
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 8
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 9
+    },
+    {
+      "voteType": 1,
+      "postId": 2,
+      "id": 10
+    },
+    {
+      "voteType": 1,
+      "postId": 2,
+      "id": 11
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 12
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 13
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 14
+    },
+    {
+      "voteType": 1,
+      "postId": 2,
+      "id": 15
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 16
+    },
+    {
+      "voteType": 1,
+      "postId": 2,
+      "id": 17
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 18
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 19
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 20
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 21
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 22
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 23
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 24
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 25
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 26
+    },
+    {
+      "voteType": 1,
+      "postId": 2,
+      "id": 27
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 28
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 29
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 30
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 31
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 32
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 33
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 34
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 35
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 36
+    },
+    {
+      "voteType": 1,
+      "postId": 2,
+      "id": 37
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 38
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 39
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 40
+    },
+    {
+      "voteType": 1,
+      "postId": 2,
+      "id": 41
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 42
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 43
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 44
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 45
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 46
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 47
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 48
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 49
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 50
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 51
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 52
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 53
+    },
+    {
+      "voteType": 1,
+      "postId": 2,
+      "id": 54
+    },
+    {
+      "voteType": 0,
+      "postId": 3,
+      "id": 55
+    },
+    {
+      "voteType": 1,
+      "postId": 3,
+      "id": 56
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 57
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 58
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 59
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 60
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 61
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 62
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 63
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 64
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 65
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 66
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 67
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 68
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 69
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 70
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 71
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 72
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 73
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 74
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 75
+    },
+    {
+      "voteType": 1,
+      "postId": 1,
+      "id": 76
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 77
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 78
     }
   ]
 }

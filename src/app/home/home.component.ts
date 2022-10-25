@@ -12,8 +12,6 @@ export class HomeComponent implements OnInit {
   posts: Array<PostModel> = [];
 
   constructor(private postService: PostService) {
-    console.log("Mira")
-
     this.postService.getAllPosts().subscribe(post => {
       this.posts = post;
     });

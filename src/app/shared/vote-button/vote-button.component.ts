@@ -8,6 +8,7 @@ import { AuthService } from 'src/app/auth/shared/auth.service';
 import { PostService } from '../post.service';
 import { throwError } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';
+import { NULL_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-vote-button',
@@ -36,23 +37,24 @@ export class VoteButtonComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.updateVoteDetails();
   }
 
   upvotePost() {
     this.votePayload.voteType = VoteType.UPVOTE;
+    console.log("Funciona")
     this.vote();
-    this.downvoteColor = '';
+    this.upvoteColor = 'green';
   }
 
   downvotePost() {
     this.votePayload.voteType = VoteType.DOWNVOTE;
     this.vote();
-    this.upvoteColor = '';
+    this.downvoteColor = 'red';
   }
 
   private vote() {
     this.votePayload.postId = this.post.id;
+    console.log("hola")
     this.voteService.vote(this.votePayload).subscribe(() => {
       this.updateVoteDetails();
     }, error => {
@@ -64,6 +66,14 @@ export class VoteButtonComponent implements OnInit {
   private updateVoteDetails() {
     this.postService.getPost(this.post.id).subscribe(post => {
       this.post = post;
+      if(this.votePayload.voteType === VoteType.UPVOTE) {
+        post.voteCount+1;
+        post.upVote = true;
+      }
+      else{
+        post.voteCount=post.voteCount-1;
+        post.downVote=true;
+      }
     });
   }
 }
