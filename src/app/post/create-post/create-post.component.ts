@@ -24,7 +24,11 @@ export class CreatePostComponent implements OnInit {
       postName: '',
       url: '',
       description: '',
-      subredditName: ''
+      subredditName: '',
+      userName: 'user',
+      voteCount: 0,
+      commentCount: 0,
+      duration: 'A few seconds ago'
     }
   }
 

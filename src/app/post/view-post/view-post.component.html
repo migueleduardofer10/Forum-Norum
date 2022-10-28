@@ -26,12 +26,13 @@
                 <textarea class="form-control" [formControlName]="'text'" placeholder="Your Thoughts?"></textarea>
               </div>
               <button type="submit" class="login float-right">Comment</button>
+                <p class="post-text">{{comments.length}} comentarios </p>
             </form>
           </div>
           <div style="margin-top: 60px;" *ngFor="let comment of comments">
             <div class="comment">
               <div class="username">
-                <a routerLink="/user/comment.username">{{comment.userName}}</a>
+                <a routerLink="/user/comment.username">{{comment.username}}</a>
               </div>
               <div>
                 <p>{{comment.duration}}</p>

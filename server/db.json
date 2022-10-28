@@ -26,6 +26,11 @@
       "name": "Metodos Cuantitativas",
       "description": "El profe es muy webon",
       "id": 5
+    },
+    {
+      "name": "SHOND",
+      "description": "dsadasdas",
+      "id": 6
     }
   ],
   "posts": [
@@ -63,34 +68,6 @@
       "duration": "1 hour ago"
     },
     {
-      "postName": "Oferta y Demanda",
-      "url": "https://www.youtube.com/watch?v=LfZ7xdMPytI&t=2198s",
-      "description": "<p>dsdsds</p>",
-      "subredditName": "Economía",
-      "id": 4
-    },
-    {
-      "postName": "dsds",
-      "url": "http://localhost:4200/create-post",
-      "description": "<p>dsds</p>",
-      "subredditName": "Economía",
-      "id": 5
-    },
-    {
-      "postName": "dsds",
-      "url": "http://localhost:4200/create-post",
-      "description": "<p>dsds</p>",
-      "subredditName": "Economía",
-      "id": 6
-    },
-    {
-      "postName": "Teorema de Bayes",
-      "url": "http://localhost:3000/",
-      "description": "<p><strong>dsadsadasdasd</strong></p>",
-      "subredditName": "Metodos Cuantitativas",
-      "id": 7
-    },
-    {
       "id": 3,
       "postName": "chaparro",
       "url": "http://www.google.com",
@@ -100,6 +77,53 @@
       "voteCount": 0,
       "commentCount": 0,
       "duration": "1 hour ago"
+    },
+    {
+      "postName": "prueba",
+      "url": "https://www.youtube.com/watch?v=LfZ7xdMPytI&t=12090s",
+      "description": "<p>dsd</p>",
+      "subredditName": "Programación",
+      "id": 4
+    },
+    {
+      "postName": "prueba2",
+      "url": "https://www.youtube.com/watch?v=LfZ7xdMPytI&t=12090s",
+      "description": "<p>dsdsdsds</p>",
+      "subredditName": "Programación",
+      "id": 5
+    },
+    {
+      "postName": "Nuevo",
+      "url": "http://localhost:4200/",
+      "description": "<p>dsdssd</p>",
+      "subredditName": "Programación",
+      "userName": "",
+      "voteCount": 0,
+      "commentCount": 0,
+      "duration": "A few seconds ago",
+      "id": 6
+    },
+    {
+      "postName": "dsds",
+      "url": "http://localhost:4200/",
+      "description": "<p>dssd</p>",
+      "subredditName": "Programación",
+      "userName": "user",
+      "voteCount": 0,
+      "commentCount": 0,
+      "duration": "A few seconds ago",
+      "id": 7
+    },
+    {
+      "postName": "nuevo",
+      "url": "http://localhost:4200/",
+      "description": "<p>dsdssd</p>",
+      "subredditName": "Programación",
+      "userName": "user",
+      "voteCount": 0,
+      "commentCount": 0,
+      "duration": "A few seconds ago",
+      "id": 8
     }
   ],
   "comments": [
@@ -151,6 +175,27 @@
       "username": "user",
       "duration": "A few seconds ago",
       "id": 6
+    },
+    {
+      "text": "dsds",
+      "postId": "8",
+      "username": "user",
+      "duration": "A few seconds ago",
+      "id": 7
+    },
+    {
+      "text": "dsds",
+      "postId": "1",
+      "username": "user",
+      "duration": "A few seconds ago",
+      "id": 8
+    },
+    {
+      "text": "dsds",
+      "postId": "1",
+      "username": "user",
+      "duration": "A few seconds ago",
+      "id": 9
     }
   ],
   "votes": [
@@ -393,6 +438,66 @@
       "voteType": 0,
       "postId": 1,
       "id": 51
+    },
+    {
+      "voteType": 0,
+      "postId": 3,
+      "id": 52
+    },
+    {
+      "voteType": 1,
+      "postId": 3,
+      "id": 53
+    },
+    {
+      "voteType": 0,
+      "postId": 4,
+      "id": 54
+    },
+    {
+      "voteType": 1,
+      "postId": 4,
+      "id": 55
+    },
+    {
+      "voteType": 0,
+      "postId": 4,
+      "id": 56
+    },
+    {
+      "voteType": 1,
+      "postId": 3,
+      "id": 57
+    },
+    {
+      "voteType": 0,
+      "postId": 3,
+      "id": 58
+    },
+    {
+      "voteType": 0,
+      "postId": 6,
+      "id": 59
+    },
+    {
+      "voteType": 1,
+      "postId": 6,
+      "id": 60
+    },
+    {
+      "voteType": 1,
+      "postId": 2,
+      "id": 61
+    },
+    {
+      "voteType": 0,
+      "postId": 2,
+      "id": 62
+    },
+    {
+      "voteType": 0,
+      "postId": 1,
+      "id": 63
     }
   ],
   "users": [

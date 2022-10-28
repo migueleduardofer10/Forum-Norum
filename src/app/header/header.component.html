@@ -22,8 +22,8 @@
         <div class="flex-grow-1 float-right">
             <div *ngIf="isLoggedIn" ngbDropdown class="float-right">
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                    <button (click)="goToUserProfile()" ngbDropdownItem>Profile</button>
-                    <button (click)="logout()" ngbDropdownItem>Logout</button>
+                    <button (click)="goToUserProfile()" ngbDropdownItem>Perfil</button>
+                    <button (click)="logout()" ngbDropdownItem>Cerrar Sesión</button>
                 </div>
                 <button class="userdetails" id="dropdownBasic1" ngbDropdownToggle>
                     <img class="account-icon" src="https://www.redditstatic.com/avatars/avatar_default_08_D4E815.png">
@@ -31,8 +31,8 @@
                 </button>
             </div>            
             <div *ngIf="!isLoggedIn">
-                <a routerLink="/sign-up" class="float-right sign-up mr-2">Sign up</a>
-                <a routerLink="/login" class="float-right login mr-2">Login</a>
+                <a routerLink="/sign-up" class="float-right sign-up mr-2">Registrarse</a>
+                <a routerLink="/login" class="float-right login mr-2">Iniciar Sesión</a>
             </div>
         </div>
     </nav>
