@@ -6,6 +6,7 @@ import { LocalStorageService } from 'ngx-webstorage';
 import { LoginRequestPayload } from '../login/login-request.payload';
 import { LoginResponse } from '../login/login-response.payload';
 import { map, tap } from 'rxjs/operators';
+import { sign } from 'crypto';
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +26,8 @@ export class AuthService {
   }
 
   signup(signupRequestPayload: SignupRequestPayload): Observable<any> {
-    return this.httpClient.post('http://localhost:8080/api/auth/signup', signupRequestPayload, { responseType: 'text' });
+    console.log(signupRequestPayload)
+    return this.httpClient.post('http://localhost:3000/users', signupRequestPayload);
   }
 
   login(loginRequestPayload: LoginRequestPayload): Observable<boolean> {

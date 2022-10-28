@@ -1,4 +1,24 @@
 {
+  "users": [
+    {
+      "username": "dasdasdas",
+      "email": "migueleduardofer1@gmail.com",
+      "password": "dssadasd",
+      "id": 1
+    },
+    {
+      "username": "valeriamelly10",
+      "email": "valeriamelly10@gmail.com",
+      "password": "Valeriamelly10",
+      "id": 2
+    },
+    {
+      "username": "sebastianperez10",
+      "email": "sebastianperez10@gmail.com",
+      "password": "Sebastianperez10",
+      "id": 3
+    }
+  ],
   "subreddit": [
     {
       "id": 1,
@@ -124,6 +144,17 @@
       "commentCount": 0,
       "duration": "A few seconds ago",
       "id": 8
+    },
+    {
+      "postName": "dsadas",
+      "url": "http://localhost:3000/",
+      "description": "<p>sadadas</p>",
+      "subredditName": "Programación",
+      "userName": "user",
+      "voteCount": 0,
+      "commentCount": 0,
+      "duration": "A few seconds ago",
+      "id": 9
     }
   ],
   "comments": [
@@ -196,6 +227,13 @@
       "username": "user",
       "duration": "A few seconds ago",
       "id": 9
+    },
+    {
+      "text": "sdds",
+      "postId": "1",
+      "username": "user",
+      "duration": "A few seconds ago",
+      "id": 10
     }
   ],
   "votes": [
@@ -323,11 +361,6 @@
       "voteType": 1,
       "postId": 1,
       "id": 28
-    },
-    {
-      "text": "mira",
-      "postId": "1",
-      "id": 29
     },
     {
       "text": "dsdsd",
@@ -498,18 +531,16 @@
       "voteType": 0,
       "postId": 1,
       "id": 63
-    }
-  ],
-  "users": [
-    {
-      "userName": "user",
-      "password": "password",
-      "email": "migueleduardofer10@gmail.com"
     },
     {
-      "userName": "user2",
-      "password": "password",
-      "email": "valeriamelly10@gmail.com"
+      "voteType": 0,
+      "postId": 9,
+      "id": 64
+    },
+    {
+      "voteType": 1,
+      "postId": 9,
+      "id": 65
     }
   ]
 }

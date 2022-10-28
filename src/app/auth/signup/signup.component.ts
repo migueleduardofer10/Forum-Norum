@@ -36,13 +36,14 @@ export class SignupComponent implements OnInit {
     this.signupRequestPayload.email = this.signupForm.get('email').value;
     this.signupRequestPayload.username = this.signupForm.get('username').value;
     this.signupRequestPayload.password = this.signupForm.get('password').value;
-
+    console.log(this.signupRequestPayload)
     this.authService.signup(this.signupRequestPayload)
       .subscribe(data => {
-        this.router.navigate(['/login'],
-          { queryParams: { registered: 'true' } });
+        console.log(data)
+        this.router.navigate(['/login']),
+        { queryParams: { registered: 'true' } };
       }, error => {
-        console.log(error);
+        console.log(error)
         this.toastr.error('Registration Failed! Please try again');
       });
   }
