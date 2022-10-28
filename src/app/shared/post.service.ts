@@ -24,6 +24,7 @@ export class PostService {
   }
   //Obtener posts por user json server
   getAllPostsByUser(name: string): Observable<PostModel[]> {
-    return this.http.get<PostModel[]>('http://localhost:3000/posts?username=' + name);
+    console.log(name);
+    return this.http.get<PostModel[]>('http://localhost:3000/posts?userName='+name);
   }
 }

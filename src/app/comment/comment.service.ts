@@ -10,16 +10,20 @@ export class CommentService {
 
   constructor(private httpClient: HttpClient) { }
 
-  //Obtener comentarios por usuario json server
-  getAllCommentsForPost(id: number): Observable<CommentPayload[]> {
-    return this.httpClient.get<CommentPayload[]>('http://localhost:3000/comments/by-post/' + id);
+  //Obtener todos los comentarios que tengan postid=1 json server
+  getAllCommentsForPost(id: number) {
+    return this.httpClient.get<CommentPayload[]>('http://localhost:3000/comments?postId=' + id);
   }
-  
+
+  //Postear comentarios json server
+
   postComment(commentPayload: CommentPayload): Observable<any> {
-    return this.httpClient.post<any>('http://localhost:3000/comments/', commentPayload);
+    console.log(commentPayload);
+    return this.httpClient.post('http://localhost:3000/comments/', commentPayload);
   }
 
   getAllCommentsByUser(name: string) {
-    return this.httpClient.get<CommentPayload[]>('http://localhost:3000/comments/by-user/' + name);
+    console.log(name);
+    return this.httpClient.get<CommentPayload[]>('http://localhost:3000/comments?userName=' + name);
   }
 }

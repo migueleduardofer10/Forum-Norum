@@ -74,7 +74,7 @@ export class AuthService {
   }
 
   getUserName() {
-    return this.localStorage.retrieve('username');
+    return "user";
   }
   getRefreshToken() {
     return this.localStorage.retrieve('refreshToken');

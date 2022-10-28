@@ -21,6 +21,11 @@
       "name": "Matematica",
       "description": "Se tocan mateticas algebraicas",
       "id": 4
+    },
+    {
+      "name": "Metodos Cuantitativas",
+      "description": "El profe es muy webon",
+      "id": 5
     }
   ],
   "posts": [
@@ -63,46 +68,94 @@
       "description": "<p>dsdsds</p>",
       "subredditName": "Economía",
       "id": 4
+    },
+    {
+      "postName": "dsds",
+      "url": "http://localhost:4200/create-post",
+      "description": "<p>dsds</p>",
+      "subredditName": "Economía",
+      "id": 5
+    },
+    {
+      "postName": "dsds",
+      "url": "http://localhost:4200/create-post",
+      "description": "<p>dsds</p>",
+      "subredditName": "Economía",
+      "id": 6
+    },
+    {
+      "postName": "Teorema de Bayes",
+      "url": "http://localhost:3000/",
+      "description": "<p><strong>dsadsadasdasd</strong></p>",
+      "subredditName": "Metodos Cuantitativas",
+      "id": 7
+    },
+    {
+      "id": 3,
+      "postName": "chaparro",
+      "url": "http://www.google.com",
+      "description": "This is my third post",
+      "userName": "user",
+      "subredditName": "Economía",
+      "voteCount": 0,
+      "commentCount": 0,
+      "duration": "1 hour ago"
     }
   ],
   "comments": [
     {
-      "postId": 1,
-      "text": "First",
-      "userName": "user",
-      "duration": "1 hour ago"
+      "text": "Nuevo comentario",
+      "postId": "1",
+      "username": "user",
+      "duration": "1 hour ago",
+      "id": 1
     },
     {
-      "postId": 2,
-      "text": "Second",
-      "userName": "user",
-      "duration": "1 hour ago"
+      "text": "Primer comentario",
+      "postId": "1",
+      "username": "user",
+      "duration": "A few seconds ago",
+      "id": 2
     },
     {
-      "postId": 3,
-      "text": "Third",
-      "userName": "user",
-      "duration": "1 hour ago"
+      "text": "Segundo Comentario",
+      "postId": "1",
+      "username": "user",
+      "duration": "A few seconds ago",
+      "id": 3
+    },
+    {
+      "text": "Tercer comentario",
+      "postId": "1",
+      "username": "user",
+      "duration": "A few seconds ago",
+      "id": 4
+    },
+    {
+      "text": "Cuarto Comentario",
+      "postId": "1",
+      "username": "user",
+      "duration": "A few seconds ago",
+      "id": 5
+    },
+    {
+      "text": "Quinto Comentario",
+      "postId": "1",
+      "username": "melly",
+      "duration": "A few seconds ago",
+      "id": 5
+    },
+    {
+      "text": "Chaparro ",
+      "postId": "1",
+      "username": "user",
+      "duration": "A few seconds ago",
+      "id": 6
     }
   ],
   "votes": [
     {
       "voteType": 0,
-      "postId": 1,
-      "id": 1
-    },
-    {
-      "voteType": 0,
-      "postId": 1,
-      "id": 2
-    },
-    {
-      "voteType": 0,
-      "postId": 1,
-      "id": 3
-    },
-    {
-      "voteType": 1,
       "postId": 1,
       "id": 4
     },
@@ -117,7 +170,7 @@
       "id": 6
     },
     {
-      "voteType": 0,
+      "voteType": 1,
       "postId": 1,
       "id": 7
     },
@@ -127,18 +180,18 @@
       "id": 8
     },
     {
-      "voteType": 0,
-      "postId": 2,
+      "voteType": 1,
+      "postId": 1,
       "id": 9
     },
     {
-      "voteType": 1,
-      "postId": 2,
+      "voteType": 0,
+      "postId": 1,
       "id": 10
     },
     {
       "voteType": 1,
-      "postId": 2,
+      "postId": 1,
       "id": 11
     },
     {
@@ -163,12 +216,12 @@
     },
     {
       "voteType": 0,
-      "postId": 2,
+      "postId": 1,
       "id": 16
     },
     {
       "voteType": 1,
-      "postId": 2,
+      "postId": 1,
       "id": 17
     },
     {
@@ -177,17 +230,17 @@
       "id": 18
     },
     {
-      "voteType": 0,
-      "postId": 2,
+      "voteType": 1,
+      "postId": 1,
       "id": 19
     },
     {
-      "voteType": 1,
+      "voteType": 0,
       "postId": 1,
       "id": 20
     },
     {
-      "voteType": 0,
+      "voteType": 1,
       "postId": 1,
       "id": 21
     },
@@ -197,52 +250,52 @@
       "id": 22
     },
     {
-      "voteType": 0,
+      "voteType": 1,
       "postId": 1,
       "id": 23
     },
     {
-      "voteType": 1,
+      "voteType": 0,
       "postId": 1,
       "id": 24
     },
     {
-      "voteType": 0,
+      "voteType": 1,
       "postId": 1,
       "id": 25
     },
     {
       "voteType": 0,
-      "postId": 2,
+      "postId": 1,
       "id": 26
     },
     {
-      "voteType": 1,
-      "postId": 2,
+      "voteType": 0,
+      "postId": 1,
       "id": 27
     },
     {
-      "voteType": 0,
-      "postId": 2,
+      "voteType": 1,
+      "postId": 1,
       "id": 28
     },
     {
-      "voteType": 1,
-      "postId": 1,
+      "text": "mira",
+      "postId": "1",
       "id": 29
     },
     {
-      "voteType": 0,
-      "postId": 1,
+      "text": "dsdsd",
+      "postId": "1",
       "id": 30
     },
     {
       "voteType": 0,
-      "postId": 2,
+      "postId": 1,
       "id": 31
     },
     {
-      "voteType": 0,
+      "voteType": 1,
       "postId": 1,
       "id": 32
     },
@@ -257,22 +310,22 @@
       "id": 34
     },
     {
-      "voteType": 1,
+      "voteType": 0,
       "postId": 1,
       "id": 35
     },
     {
-      "voteType": 0,
-      "postId": 2,
+      "voteType": 1,
+      "postId": 1,
       "id": 36
     },
     {
-      "voteType": 1,
+      "voteType": 0,
       "postId": 2,
       "id": 37
     },
     {
-      "voteType": 0,
+      "voteType": 1,
       "postId": 2,
       "id": 38
     },
@@ -282,17 +335,17 @@
       "id": 39
     },
     {
-      "voteType": 0,
-      "postId": 2,
+      "voteType": 1,
+      "postId": 1,
       "id": 40
     },
     {
-      "voteType": 1,
-      "postId": 2,
+      "voteType": 0,
+      "postId": 1,
       "id": 41
     },
     {
-      "voteType": 0,
+      "voteType": 1,
       "postId": 1,
       "id": 42
     },
@@ -302,37 +355,37 @@
       "id": 43
     },
     {
-      "voteType": 1,
-      "postId": 1,
+      "voteType": 0,
+      "postId": 2,
       "id": 44
     },
     {
-      "voteType": 0,
+      "voteType": 1,
       "postId": 1,
       "id": 45
     },
     {
-      "voteType": 0,
-      "postId": 1,
+      "voteType": 1,
+      "postId": 2,
       "id": 46
     },
     {
-      "voteType": 1,
+      "voteType": 0,
       "postId": 1,
       "id": 47
     },
     {
       "voteType": 0,
-      "postId": 1,
+      "postId": 2,
       "id": 48
     },
     {
       "voteType": 0,
-      "postId": 1,
+      "postId": 2,
       "id": 49
     },
     {
-      "voteType": 0,
+      "voteType": 1,
       "postId": 1,
       "id": 50
     },
@@ -340,141 +393,18 @@
       "voteType": 0,
       "postId": 1,
       "id": 51
+    }
+  ],
+  "users": [
+    {
+      "userName": "user",
+      "password": "password",
+      "email": "migueleduardofer10@gmail.com"
     },
     {
-      "voteType": 1,
-      "postId": 1,
-      "id": 52
-    },
-    {
-      "voteType": 0,
-      "postId": 2,
-      "id": 53
-    },
-    {
-      "voteType": 1,
-      "postId": 2,
-      "id": 54
-    },
-    {
-      "voteType": 0,
-      "postId": 3,
-      "id": 55
-    },
-    {
-      "voteType": 1,
-      "postId": 3,
-      "id": 56
-    },
-    {
-      "voteType": 1,
-      "postId": 1,
-      "id": 57
-    },
-    {
-      "voteType": 0,
-      "postId": 1,
-      "id": 58
-    },
-    {
-      "voteType": 0,
-      "postId": 1,
-      "id": 59
-    },
-    {
-      "voteType": 0,
-      "postId": 1,
-      "id": 60
-    },
-    {
-      "voteType": 0,
-      "postId": 1,
-      "id": 61
-    },
-    {
-      "voteType": 0,
-      "postId": 2,
-      "id": 62
-    },
-    {
-      "voteType": 0,
-      "postId": 2,
-      "id": 63
-    },
-    {
-      "voteType": 0,
-      "postId": 2,
-      "id": 64
-    },
-    {
-      "voteType": 0,
-      "postId": 2,
-      "id": 65
-    },
-    {
-      "voteType": 0,
-      "postId": 2,
-      "id": 66
-    },
-    {
-      "voteType": 0,
-      "postId": 2,
-      "id": 67
-    },
-    {
-      "voteType": 0,
-      "postId": 2,
-      "id": 68
-    },
-    {
-      "voteType": 0,
-      "postId": 2,
-      "id": 69
-    },
-    {
-      "voteType": 0,
-      "postId": 1,
-      "id": 70
-    },
-    {
-      "voteType": 0,
-      "postId": 1,
-      "id": 71
-    },
-    {
-      "voteType": 0,
-      "postId": 1,
-      "id": 72
-    },
-    {
-      "voteType": 1,
-      "postId": 1,
-      "id": 73
-    },
-    {
-      "voteType": 0,
-      "postId": 1,
-      "id": 74
-    },
-    {
-      "voteType": 0,
-      "postId": 2,
-      "id": 75
-    },
-    {
-      "voteType": 1,
-      "postId": 1,
-      "id": 76
-    },
-    {
-      "voteType": 0,
-      "postId": 1,
-      "id": 77
-    },
-    {
-      "voteType": 0,
-      "postId": 1,
-      "id": 78
+      "userName": "user2",
+      "password": "password",
+      "email": "valeriamelly10@gmail.com"
     }
   ]
 }
