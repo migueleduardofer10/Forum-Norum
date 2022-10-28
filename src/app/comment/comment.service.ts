@@ -24,6 +24,6 @@ export class CommentService {
 
   getAllCommentsByUser(name: string) {
     console.log(name);
-    return this.httpClient.get<CommentPayload[]>('http://localhost:3000/comments?userName=' + name);
+    return this.httpClient.get<CommentPayload[]>('http://localhost:3000/comments?username=' + name);
   }
 }
