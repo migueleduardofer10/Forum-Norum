@@ -6,6 +6,7 @@ import { ActivatedRoute, DefaultUrlSerializer, Router } from '@angular/router';
 import { throwError } from 'rxjs';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { CommentService } from 'src/app/comment/comment.service';
+import { AuthService } from 'src/app/auth/shared/auth.service';
 
 @Component({
   selector: 'app-view-post',
@@ -18,10 +19,9 @@ export class ViewPostComponent implements OnInit {
   post: PostModel;
   commentForm: FormGroup;
   commentPayload: CommentPayload;
-  comments: CommentPayload[];
-  authService: any;
+  comments: CommentPayload[]
 
-  constructor(private postService: PostService, private activateRoute: ActivatedRoute,
+  constructor(private authService: AuthService,private postService: PostService, private activateRoute: ActivatedRoute,
     private commentService: CommentService, private router: Router) {
     this.postId = this.activateRoute.snapshot.params.id;
     
@@ -31,7 +31,7 @@ export class ViewPostComponent implements OnInit {
     this.commentPayload = {
       text: '',
       postId: this.postId,
-      username: 'user',
+      username: authService.getUserName(),
       duration: 'A few seconds ago'
     };
   }

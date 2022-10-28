@@ -6,8 +6,6 @@ import { LocalStorageService } from 'ngx-webstorage';
 import { LoginRequestPayload } from '../login/login-request.payload';
 import { LoginResponse } from '../login/login-response.payload';
 import { map, tap } from 'rxjs/operators';
-import { sign } from 'crypto';
-
 @Injectable({
   providedIn: 'root'
 })
@@ -30,19 +28,20 @@ export class AuthService {
     return this.httpClient.post('http://localhost:3000/users', signupRequestPayload);
   }
 
-  login(loginRequestPayload: LoginRequestPayload): Observable<boolean> {
-    return this.httpClient.post<LoginResponse>('http://localhost:8080/api/auth/login',
-      loginRequestPayload).pipe(map(data => {
-        this.localStorage.store('authenticationToken', data.authenticationToken);
-        this.localStorage.store('username', data.username);
-        this.localStorage.store('refreshToken', data.refreshToken);
-        this.localStorage.store('expiresAt', data.expiresAt);
-
-        this.loggedIn.emit(true);
-        this.username.emit(data.username);
-        return true;
+  login(loginRequestPayload: LoginRequestPayload): Observable<any> {
+    return this.httpClient.get('http://localhost:3000/users?username=' + loginRequestPayload.username + '&password=' + loginRequestPayload.password)
+      //establecer el username en el localstorage
+      .pipe(map(data => {
+        if (data[0]) {
+          this.localStorage.store('username', loginRequestPayload.username);
+          //recuperar el username del localstorage
+          this.username.emit(this.getUserName());
+          this.loggedIn.emit(true);
+          this.username.emit(loginRequestPayload.username);
+        }
+        return data;
       }));
-  }
+      }
 
   getJwtToken() {
     return this.localStorage.retrieve('authenticationToken');
@@ -76,13 +75,21 @@ export class AuthService {
   }
 
   getUserName() {
-    return "user";
+    return this.localStorage.retrieve('username');
   }
   getRefreshToken() {
     return this.localStorage.retrieve('refreshToken');
   }
 
+  //Función que comprueba si está logeado 
   isLoggedIn(): boolean {
-    return true;
+    return this.localStorage.retrieve('username');
   }
-}
+  
+
+  //Obtener el usuario dando un usuario y password y guardar sus datos en el local storage 
+  //para poder usarlos en otras partes de la app
+ 
+  }
+
+

@@ -1,3 +1,5 @@
+import { AuthService } from 'src/app/auth/shared/auth.service';
+import { LocalStorageService } from 'ngx-webstorage';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormControl } from '@angular/forms';
 import { SubredditModel } from 'src/app/subreddit/subreddit-response';
@@ -17,15 +19,16 @@ export class CreatePostComponent implements OnInit {
   createPostForm: FormGroup;
   postPayload: CreatePostPayload;
   subreddits: Array<SubredditModel>;
+  LocalStorageService: any;
 
-  constructor(private router: Router, private postService: PostService,
+  constructor(private authService: AuthService, private router: Router, private postService: PostService,
     private subredditService: SubredditService) {
     this.postPayload = {
       postName: '',
       url: '',
       description: '',
       subredditName: '',
-      userName: 'user',
+      userName:  this.authService.getUserName(),
       voteCount: 0,
       commentCount: 0,
       duration: 'A few seconds ago'
